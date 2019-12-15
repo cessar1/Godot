@@ -1,0 +1,202 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Player.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Attack down"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 60 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("hitbox/hitbox_down:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Attack left"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -60, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("hitbox/hitbox_left:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Attack right"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 60, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("hitbox/hitbox_right:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.195661 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Attack up"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Weapon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -60 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("hitbox/hitbox_up:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="RectangleShape2D" id=5]
+
+[sub_resource type="RectangleShape2D" id=6]
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 92.1954
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 10, 11 )
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="Weapon" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Attack down" = SubResource( 1 )
+"anims/Attack left" = SubResource( 2 )
+"anims/Attack right" = SubResource( 3 )
+"anims/Attack up" = SubResource( 4 )
+
+[node name="hitbox" type="Area2D" parent="."]
+editor/display_folded = true
+collision_mask = 0
+
+[node name="hitbox_right" type="CollisionShape2D" parent="hitbox"]
+position = Vector2( 60, 0 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="hitbox_left" type="CollisionShape2D" parent="hitbox"]
+position = Vector2( -60, 0 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="hitbox_up" type="CollisionShape2D" parent="hitbox"]
+position = Vector2( 0, -60 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="hitbox_down" type="CollisionShape2D" parent="hitbox"]
+position = Vector2( 0, 60 )
+shape = SubResource( 6 )
+disabled = true
+
+[node name="MagnetBox" type="Area2D" parent="."]
+modulate = Color( 0.0392157, 0.0705882, 0.0705882, 1 )
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MagnetBox"]
+shape = SubResource( 7 )
+
+[node name="PlayerBox" type="Area2D" parent="."]
+editor/display_folded = true
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerBox"]
+shape = SubResource( 8 )
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 1 )
+shape = SubResource( 9 )
+
+[node name="BodyFugure" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 0, -10 )
+scale = Vector2( 1, 0.75 )
+
+[node name="Head" type="Polygon2D" parent="BodyFugure"]
+color = Color( 0.529412, 0.396078, 0.313726, 1 )
+polygon = PoolVector2Array( -10, -36.6667, 10, -36.6667, 10, -10, -10, -10 )
+
+[node name="Body" type="Polygon2D" parent="BodyFugure"]
+polygon = PoolVector2Array( -10, 30, 0, 16.6667, 10, 30, 10, -10, -10, -10, -10, 30 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="area_entered" from="PlayerBox" to="." method="_on_PlayerBox_area_entered"]

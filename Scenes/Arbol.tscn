@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Arbol.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Arbol.tres" type="Animation" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.44091, 11.8438 )
+
+[node name="Arbol" type="StaticBody2D"]
+script = ExtResource( 1 )
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+position = Vector2( 0.753673, 12.6346 )
+shape = SubResource( 1 )
+
+[node name="Tronco" type="Polygon2D" parent="."]
+position = Vector2( 1.7197, 12.2745 )
+rotation = 1.57079
+scale = Vector2( 1.09387, 0.640457 )
+color = Color( 0.615686, 0.403922, 0.176471, 1 )
+polygon = PoolVector2Array( -12.1312, 13.5343, 11.684, 10.8036, 15.1627, 0.406191, 11.2492, -10.7339, -11.3855, -13.5276, -9.14864, -4.61308, -9.89427, 5.25653 )
+
+[node name="Tronco2" type="Polygon2D" parent="."]
+position = Vector2( 1.23403, -16.9084 )
+color = Color( 0.756863, 0.607843, 0.203922, 1 )
+polygon = PoolVector2Array( -5.66969, 11.0752, -9.35018, 16.3054, -0.0520859, 19.9859, 10.0209, 17.0803, 4.98438, 11.6564 )
+
+[node name="Copa" type="Polygon2D" parent="."]
+position = Vector2( -3.90068, 24.1 )
+z_index = 1
+color = Color( 0.313726, 0.733333, 0.054902, 1 )
+polygon = PoolVector2Array( -20, -20, 5, -100, 30, -20, 13.3333, -20, 5, -10, -3.33333, -20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Copa2" type="Polygon2D" parent="Copa"]
+position = Vector2( -3.33333, -10 )
+z_index = 1
+color = Color( 0.313726, 0.733333, 0.054902, 1 )
+polygon = PoolVector2Array( -25, -20, 8.33333, -100, 41.6667, -20, 8.33333, -30 )
+
+[node name="Copa3" type="Polygon2D" parent="Copa"]
+position = Vector2( -3.33333, -20 )
+z_index = 1
+color = Color( 0.313726, 0.733333, 0.054902, 1 )
+polygon = PoolVector2Array( -25, -20, 8.33333, -90, 41.6667, -20, 8.33333, -30 )
+
+[node name="Copa4" type="Polygon2D" parent="Copa"]
+position = Vector2( -3.33333, -30 )
+z_index = 1
+color = Color( 0.313726, 0.733333, 0.054902, 1 )
+polygon = PoolVector2Array( -25, -20, 8.33333, -110, 41.6667, -20, 8.33333, -40 )
+
+[node name="Copa5" type="Polygon2D" parent="Copa"]
+position = Vector2( -2.17512, -28.6101 )
+z_index = 1
+color = Color( 0.490196, 0.733333, 0.054902, 1 )
+polygon = PoolVector2Array( -26.4846, -18.6541, -10.7241, -65.6654, -19.426, -60.707, -0.542908, -93.7088, -11.2375, -89.6021, 10.6473, -115.814, 22.1478, -96.466, 17.1945, -97.5467, 32.1863, -73.8742, 22.5981, -78.0937, 41.6667, -20, 17.1945, -44.051, 8.33333, -30, 0.983658, -45.1318 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/mover = ExtResource( 2 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 0, -95.6648 )
+z_index = 2
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

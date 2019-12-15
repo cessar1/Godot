@@ -1,0 +1,280 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Arbol.tscn" type="PackedScene" id=1]
+
+[node name="Terreno" type="Node2D"]
+
+[node name="Suelo" type="Polygon2D" parent="."]
+position = Vector2( -1350, -1360 )
+scale = Vector2( 6.74039, 6.19672 )
+color = Color( 0.639216, 0.764706, 0.364706, 1 )
+polygon = PoolVector2Array( 1030, 0, 0, 0, 0, 610, 1040, 610, 1040, 300 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Arboles" type="Node2D" parent="."]
+
+[node name="Arbol19" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 250, 140 )
+
+[node name="Arbol20" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2070, 1020 )
+
+[node name="Arbol21" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1400, 1100 )
+z_index = 1
+
+[node name="Arbol22" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( -80, 280 )
+
+[node name="Arbol23" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1630, 950 )
+
+[node name="Arbol24" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 730, 940 )
+
+[node name="Arbol15" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 120, 290 )
+
+[node name="Arbol16" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 60, 490 )
+
+[node name="Arbol17" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1100, 720 )
+
+[node name="Arbol18" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 270, 480 )
+
+[node name="Arbol7" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 440, -500 )
+
+[node name="Arbol25" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 780, -230 )
+
+[node name="Arbol26" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1550, -360 )
+
+[node name="Arbol27" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2730, -130 )
+
+[node name="Arbol28" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2970, -390 )
+
+[node name="Arbol29" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3000, -190 )
+
+[node name="Arbol30" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3470, 260 )
+
+[node name="Arbol31" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3160, 450 )
+
+[node name="Arbol32" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2870, 550 )
+
+[node name="Arbol33" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3240, 550 )
+
+[node name="Arbol34" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3650, 500 )
+
+[node name="Arbol35" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3870, 240 )
+
+[node name="Arbol36" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3740, 90 )
+
+[node name="Arbol37" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4410, 190 )
+
+[node name="Arbol41" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4740, 610 )
+
+[node name="Arbol42" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 5140, 1300 )
+
+[node name="Arbol43" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4350, 1910 )
+
+[node name="Arbol44" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4840, 1550 )
+
+[node name="Arbol45" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 5400, 1950 )
+
+[node name="Arbol38" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3730, -250 )
+
+[node name="Arbol39" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4040, -360 )
+
+[node name="Arbol40" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4050, -360 )
+
+[node name="Arbol46" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4990, -590 )
+
+[node name="Arbol47" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4980, -590 )
+
+[node name="Arbol49" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4410, -800 )
+
+[node name="Arbol50" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3350, -690 )
+
+[node name="Arbol51" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3490, -710 )
+
+[node name="Arbol52" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3540, -810 )
+
+[node name="Arbol53" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3640, -620 )
+
+[node name="Arbol48" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 5180, -100 )
+
+[node name="Arbol8" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 820, 720 )
+
+[node name="Arbol9" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1200, -340 )
+
+[node name="Arbol10" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 900, 490 )
+
+[node name="Arbol11" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1410, 390 )
+
+[node name="Arbol12" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1500, 150 )
+
+[node name="Arbol13" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1890, -290 )
+
+[node name="Arbol14" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2220, -110 )
+
+[node name="Arbol" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1560, 1270 )
+
+[node name="Arbol2" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 490, 1350 )
+
+[node name="Arbol54" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 960, 1430 )
+
+[node name="Arbol55" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 170, 1220 )
+
+[node name="Arbol59" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 360, 1800 )
+
+[node name="Arbol60" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2590, 1790 )
+
+[node name="Arbol70" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2240, 1680 )
+
+[node name="Arbol71" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2830, 1640 )
+
+[node name="Arbol73" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2600, 2170 )
+
+[node name="Arbol74" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3050, 1850 )
+
+[node name="Arbol75" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4510, 810 )
+
+[node name="Arbol77" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4540, 1210 )
+
+[node name="Arbol78" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4240, 1420 )
+
+[node name="Arbol79" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 5040, 1000 )
+
+[node name="Arbol80" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 5110, 530 )
+
+[node name="Arbol81" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 5010, 310 )
+
+[node name="Arbol82" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4900, 250 )
+
+[node name="Arbol83" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 5010, 180 )
+
+[node name="Arbol76" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 4150, 890 )
+
+[node name="Arbol72" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3140, 1490 )
+
+[node name="Arbol64" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3080, 2050 )
+
+[node name="Arbol65" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3370, 1670 )
+
+[node name="Arbol66" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3550, 1460 )
+
+[node name="Arbol67" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2940, 1080 )
+
+[node name="Arbol68" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 3240, 1130 )
+
+[node name="Arbol69" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2680, 1350 )
+
+[node name="Arbol61" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( -100, 1850 )
+
+[node name="Arbol62" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( -670, 1640 )
+
+[node name="Arbol56" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( -380, 1020 )
+
+[node name="Arbol57" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( -730, 1350 )
+
+[node name="Arbol58" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 780, 1660 )
+
+[node name="Arbol63" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( -210, 1480 )
+
+[node name="Arbol3" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1210, 460 )
+
+[node name="Arbol4" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 1920, 800 )
+
+[node name="Arbol5" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 640, 40 )
+
+[node name="Arbol6" parent="Arboles" instance=ExtResource( 1 )]
+position = Vector2( 2150, 630 )
+
+[node name="Agua" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="Agua"]
+position = Vector2( -260, -50 )
+scale = Vector2( 1.34286, 1.7451 )
+color = Color( 0.235294, 0.54902, 0.529412, 1 )
+polygon = PoolVector2Array( 871.915, 118.539, 894.255, 147.191, 812.341, 204.494, 670.851, 244.607, 648.511, 347.753, 708.085, 439.438, 633.617, 525.393, 648.511, 628.539, 797.447, 645.73, 1140, 433.708, 1408.09, 313.371, 1624.04, 107.079, 1877.23, 38.3146, 2078.3, 147.191, 2420.21, 103.146, 2628.72, -74.4944, 2725.53, -320.899, 2829.79, -315.169, 2822.34, -68.7641, 2591.49, 131.798, 2375.53, 240.674, 2137.23, 280.787, 2196.81, 435.506, 2435.11, 395.393, 2725.53, 429.775, 3008.51, 515.73, 3150.64, 674.382, 3187.23, 842.36, 3120.21, 1025.73, 2956.38, 1163.26, 2859.57, 1335.17, 2762.77, 1415.39, 2517.02, 1409.66, 2628.72, 1300.79, 2740.43, 1123.15, 2934.04, 991.348, 3015.96, 819.438, 2904.26, 624.607, 2651.06, 510, 2397.87, 515.73, 2130.43, 617.079, 1675.53, 997.079, 1459.57, 1083.03, 1303.19, 1088.76, 1347.87, 979.888, 1608.51, 888.202, 1757.45, 710.562, 1958.51, 578.764, 2025.53, 418.315, 1965.96, 252.135, 1779.79, 200.562, 1593.62, 286.517, 1437.23, 418.315, 1130, 590, 1000, 640, 804.894, 725.955, 507.021, 731.685, 365.532, 640, 157.021, 617.079, -96.8085, 527.191, -275.532, 550.112, -424.468, 515.73, -469.149, 418.315, -446.809, 343.82, -409.574, 286.517, -364.894, 217.753, -223.404, 189.101, -89.3617, 217.753, 7.44681, 292.247, 22.3404, 383.933, 7.44681, 458.427, 216.596, 531.124, 499.575, 565.506, 581.489, 508.202, 590, 420, 540, 380, 470, 310, 500, 200, 570, 160, 640, 170, 693.192, 181.573, 775.106, 130 )
+__meta__ = {
+"_edit_lock_": true
+}

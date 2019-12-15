@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Terreno.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Arbol.tscn" type="PackedScene" id=4]
+
+[node name="Game" type="Node2D"]
+
+[node name="Terreno" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, -1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 236.55, 169.1 )
+collision_mask = 0
+
+[node name="Enemy" parent="." instance=ExtResource( 3 )]
+position = Vector2( 401.647, 165.776 )
+
+[node name="Arbol" parent="." instance=ExtResource( 4 )]
+position = Vector2( 91.1452, 142.839 )
